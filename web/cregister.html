@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#rb').click(function(){
+        var c = confirm('Are You Register ?');
+        if(c == true){
+            $('#rform').attr('method','post');
+            $('#rform').attr('action','cregister');
+            $('#rform').submit();
+        };
+    });
+});
+</script>
+</head>
+<body>
+<h1>Cust Register Page</h1>
+<form id="rform">
+ID<input type="text" name="id"><br>
+PWD<input type="password" name="pwd"><br>
+NAME<input type="text" name="name"><br>
+AGE<input type="number" name="age"><br>
+<input id="rb" type="button" value="REGISTER">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
